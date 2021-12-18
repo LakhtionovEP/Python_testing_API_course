@@ -20,3 +20,11 @@ class Checker:
             if item['status'] != exp_status:
                 return False
         return True
+
+
+    @staticmethod
+    def check_post_pet(resp_dict, exp_status):
+        for item in resp_dict:
+            if item['status'] != exp_status:
+                return False
+        return True

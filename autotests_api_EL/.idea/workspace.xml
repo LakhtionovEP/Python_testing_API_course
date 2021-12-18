@@ -19,7 +19,18 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b775fd93-5d14-4246-af9e-1162ce983e82" name="Default Changelist" comment="" />
+    <list default="true" id="b775fd93-5d14-4246-af9e-1162ce983e82" name="Default Changelist" comment="cccc">
+      <change afterPath="$PROJECT_DIR$/helpers/petgen.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/schemas/post_pet_by_id.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/pet/post/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/pet/post/test_post_pet_by_id.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EL_debug.py" beforeDir="false" afterPath="$PROJECT_DIR$/EL_debug.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application.py" beforeDir="false" afterPath="$PROJECT_DIR$/application.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkers/general.py" beforeDir="false" afterPath="$PROJECT_DIR$/checkers/general.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clients/pet.py" beforeDir="false" afterPath="$PROJECT_DIR$/clients/pet.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,7 +55,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../autotests_api_EL_new" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable" />
   </component>
   <component name="RunManager" selected="Python tests.pytest in autotests_api_EL">
@@ -61,27 +72,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/EL_debug.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="general" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="autotests_api_EL" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/checkers" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/checkers/general.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -127,6 +117,22 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="pytest in get" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="autotests_api_EL" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/pet/get" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/pet/get&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="pytest in tests" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="autotests_api_EL" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -147,9 +153,9 @@
       <list>
         <item itemvalue="Python tests.pytest in autotests_api_EL" />
         <item itemvalue="Python.EL_debug" />
+        <item itemvalue="Python tests.pytest in get" />
         <item itemvalue="Python tests.pytest in tests" />
         <item itemvalue="Python.test_get_pet_by_id" />
-        <item itemvalue="Python.general" />
       </list>
     </recent_temporary>
   </component>
@@ -176,48 +182,49 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="351" y="0" key="#Unittests_in_tests" timestamp="1639596699215">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="351" y="0" key="#Unittests_in_tests/0.0.1280.680@0.0.1280.680" timestamp="1639596699215" />
-    <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1639594416423">
+    <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1639679985509">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1639594416423" />
-    <state width="1237" height="109" key="GridCell.Tab.0.bottom" timestamp="1639597796676">
+    <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1639679985509" />
+    <state width="1237" height="204" key="GridCell.Tab.0.bottom" timestamp="1639679760584">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="109" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1639597796676" />
-    <state width="1237" height="109" key="GridCell.Tab.0.center" timestamp="1639597796676">
+    <state width="1237" height="204" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1639679760584" />
+    <state width="1237" height="204" key="GridCell.Tab.0.center" timestamp="1639679760584">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="109" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1639597796676" />
-    <state width="1237" height="109" key="GridCell.Tab.0.left" timestamp="1639597796676">
+    <state width="1237" height="204" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1639679760584" />
+    <state width="1237" height="204" key="GridCell.Tab.0.left" timestamp="1639679760584">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="109" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1639597796676" />
-    <state width="1237" height="109" key="GridCell.Tab.0.right" timestamp="1639597796676">
+    <state width="1237" height="204" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1639679760584" />
+    <state width="1237" height="204" key="GridCell.Tab.0.right" timestamp="1639679760584">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="109" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1639597796676" />
-    <state width="1237" height="204" key="GridCell.Tab.1.bottom" timestamp="1639597100918">
+    <state width="1237" height="204" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1639679760584" />
+    <state width="1237" height="204" key="GridCell.Tab.1.bottom" timestamp="1639679760584">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="204" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1639597100918" />
-    <state width="1237" height="204" key="GridCell.Tab.1.center" timestamp="1639597100918">
+    <state width="1237" height="204" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1639679760584" />
+    <state width="1237" height="204" key="GridCell.Tab.1.center" timestamp="1639679760584">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="204" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1639597100918" />
-    <state width="1237" height="204" key="GridCell.Tab.1.left" timestamp="1639597100918">
+    <state width="1237" height="204" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1639679760584" />
+    <state width="1237" height="204" key="GridCell.Tab.1.left" timestamp="1639679760584">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="204" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1639597100918" />
-    <state width="1237" height="204" key="GridCell.Tab.1.right" timestamp="1639597100918">
+    <state width="1237" height="204" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1639679760584" />
+    <state width="1237" height="204" key="GridCell.Tab.1.right" timestamp="1639679760584">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="204" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1639597100918" />
+    <state width="1237" height="204" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1639679760584" />
     <state x="142" y="0" key="SettingsEditor" timestamp="1639596728717">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

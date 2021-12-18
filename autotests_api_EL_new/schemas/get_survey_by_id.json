@@ -1,0 +1,269 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer"
+    },
+    "title": {
+      "type": "string"
+    },
+    "businessTitle": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "created": {
+      "type": "string"
+    },
+    "updated": {
+      "type": "string"
+    },
+    "surveyPages": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "title": {
+              "type": "string"
+            },
+            "attributes": {
+              "type": "null"
+            },
+            "visibleIf": {
+              "type": "null"
+            },
+            "surveyQuestion": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "type": {
+                      "type": "string"
+                    },
+                    "attributes": {
+                      "type": "object",
+                      "properties": {
+                        "title": {
+                          "type": "string"
+                        },
+                        "showNumbers": {
+                          "type": "boolean"
+                        },
+                        "hasOther": {
+                          "type": "boolean"
+                        },
+                        "isRequired": {
+                          "type": "boolean"
+                        },
+                        "values": {
+                          "type": "array",
+                          "items": [
+                            {
+                              "type": "object",
+                              "properties": {
+                                "id": {
+                                  "type": "integer"
+                                },
+                                "value": {
+                                  "type": "string"
+                                },
+                                "withComment": {
+                                  "type": "boolean"
+                                }
+                              },
+                              "required": [
+                                "id",
+                                "value",
+                                "withComment"
+                              ]
+                            },
+                            {
+                              "type": "object",
+                              "properties": {
+                                "id": {
+                                  "type": "integer"
+                                },
+                                "value": {
+                                  "type": "string"
+                                },
+                                "withComment": {
+                                  "type": "boolean"
+                                }
+                              },
+                              "required": [
+                                "id",
+                                "value",
+                                "withComment"
+                              ]
+                            }
+                          ]
+                        }
+                      },
+                      "required": [
+                        "title",
+                        "showNumbers",
+                        "hasOther",
+                        "isRequired",
+                        "values"
+                      ]
+                    },
+                    "visibleIf": {
+                      "type": "null"
+                    },
+                    "junction": {
+                      "type": "array",
+                      "items": [
+                        {
+                          "type": "object",
+                          "properties": {
+                            "answers": {
+                              "type": "array",
+                              "items": [
+                                {
+                                  "type": "string"
+                                }
+                              ]
+                            },
+                            "sequenceId": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "answers",
+                            "sequenceId"
+                          ]
+                        }
+                      ]
+                    },
+                    "sequenceId": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "type",
+                    "attributes",
+                    "visibleIf",
+                    "junction",
+                    "sequenceId"
+                  ]
+                }
+              ]
+            }
+          },
+          "required": [
+            "id",
+            "title",
+            "attributes",
+            "visibleIf",
+            "surveyQuestion"
+          ]
+        }
+      ]
+    },
+    "categories": {
+      "type": "array",
+      "items": {}
+    },
+    "thankPage": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "linkEnabled": {
+          "type": "boolean"
+        },
+        "linkText": {
+          "type": "string"
+        },
+        "linkUrl": {
+          "type": "string"
+        },
+        "utmConfig": {
+          "type": "object",
+          "properties": {
+            "utmSource": {
+              "type": "string"
+            },
+            "utmMedium": {
+              "type": "string"
+            },
+            "utmCampaign": {
+              "type": "string"
+            },
+            "utmContent": {
+              "type": "string"
+            },
+            "utmTerm": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "utmSource",
+            "utmMedium",
+            "utmCampaign",
+            "utmContent",
+            "utmTerm"
+          ]
+        }
+      },
+      "required": [
+        "title",
+        "description",
+        "linkEnabled",
+        "linkText",
+        "linkUrl",
+        "utmConfig"
+      ]
+    },
+    "author": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "name": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "name"
+      ]
+    },
+    "showQuestionCount": {
+      "type": "boolean"
+    },
+    "complicated": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "id",
+    "title",
+    "businessTitle",
+    "status",
+    "created",
+    "updated",
+    "surveyPages",
+    "categories",
+    "thankPage",
+    "author",
+    "showQuestionCount",
+    "complicated"
+  ]
+}
